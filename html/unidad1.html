@@ -1,0 +1,425 @@
+<!-- Este es un html en el que se hablará de la unidad 1 de esta materia
+    Autor: Alma Rosaura Mía Morales Ramírez -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Unidad 1 </title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src = "../js/header.js"></script>
+        <link rel="stylesheet" href="../css/stylesU1.css">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- css para slider -->
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    </head>
+
+    <body>
+    <div class="contenedorDIV">
+        <header class = "header2">
+            <div class="wrapper">
+                <div class="logo">
+                    Unidad &nbsp; 1 
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="unidad2.html">Unidad 2</a>
+                    <a href="unidad3.html">Unidad 3</a>
+                    <a href="unidad4.html">Unidad 4</a>
+                    <a href="practicas.html">Prácticas</a>
+                </nav>
+            </div>
+        </header>
+        <div class="tituloTemas wrapper">
+            1.1 Modelos de arquitecturas de cómputo
+            <p class="introduccion">
+                Es el diseño y la organización de un sistema para un equipo de cómputo.
+                Es un modelo y descripción de cada función, así como los
+                requerimientos y las implementaciones de diseño para varias
+                partes del equipo de cómputo.
+            </p>
+        </div>
+        <div class="columnas">
+            <div class="tipoColumnas">
+                <p class="titulos">Clásicas</p>
+                <div class = "arquitecturas">
+                    <div class = "tipo" style="background-color: #2b3244;">
+                        <p class = "subtitulos"> 💻 Von Neumman 💻 </p>
+                        <div class="imagen">
+                            <img src = "../media/unidad1/tema1/vonNeumann.png" width="400px" style="padding-top:20px;">
+                        </div>
+                        <p>
+                        La arquitectura von Neumann es una arquitectura de 
+                        computadora que se caracteriza por tener una CPU que 
+                        consta de una unidad aritmética y lógica, una unidad de 
+                        control y una memoria principal. Esta arquitectura utiliza un sistema 
+                        de direcciones para acceder a la memoria y se basa en la idea de que 
+                        los datos y las instrucciones se almacenan en la misma memoria. La arquitectura
+                        von Neumann ha sido fundamental en la evolución de la informática y ha sido 
+                        ampliamente utilizada en la construcción de computadoras modernas.
+                        </p>
+                    </div>
+                    <div class = "tipo" style="background-color: #2b3244;">
+                        <p class = "subtitulos"> 💻 Harvard 💻 </p>
+                        <div class="imagen">
+                            <img src = "../media/unidad1/tema1/harvard.png" width="500px" style="padding-right:20px;">
+                        </div>
+                        <p>
+                            La arquitectura Harvard es un modelo de computadora que utiliza dos buses de datos 
+                            y memoria separados para almacenar y acceder a los datos e instrucciones. La CPU se divide en dos partes, 
+                            una que accede a la memoria de datos y otra que accede a la memoria de instrucciones. Esta arquitectura se
+                            utiliza principalmente en dispositivos embebidos y sistemas de procesamiento de señales digitales, y permite un acceso 
+                            más rápido a los datos e instrucciones en comparación con la arquitectura von Neumann.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class ="arquitecturas">
+            <div class = "tipo">
+                <p class="titulos">Segmentadas </p>
+                <p>
+                    La arquitectura segmentada es una técnica de diseño de la CPU que se utiliza para mejorar su rendimiento. Se basa en la idea de que cada instrucción de un programa puede descomponerse en varias etapas o segmentos que se pueden procesar de manera independiente y en paralelo. Cada etapa realiza una parte específica del procesamiento, como decodificar la instrucción, buscar operandos, realizar operaciones aritméticas, entre otros.
+                </p>
+                <img src = "../media/unidad1/tema1/segmentada.png" width="300px">
+                <p>
+                    Cuando se utiliza la arquitectura segmentada, el procesamiento de la CPU se divide en segmentos secuenciales, lo que permite que varios segmentos se ejecuten simultáneamente en diferentes unidades de hardware. Esto reduce el tiempo de ejecución total y mejora el rendimiento de la CPU.
+                </p>
+                <p>
+                    Sin embargo, la implementación de la arquitectura segmentada también puede ser complicada y requiere una mayor coordinación entre los diferentes segmentos. Además, algunas instrucciones pueden no ser fácilmente segmentables y, por lo tanto, no se beneficiarían del uso de esta técnica.
+                </p>
+            </div>
+            <div class = "tipo">
+                <p class="titulos">Multiprocesamiento</p> 
+                <p>
+                    La arquitectura de multiprocesamiento se refiere al diseño de sistemas informáticos que utilizan múltiples procesadores o núcleos para ejecutar tareas simultáneamente. En un sistema de multiprocesamiento, los procesadores pueden trabajar juntos para realizar una tarea única o pueden trabajar en tareas separadas de forma independiente.
+                </p>
+                <img src = "../media/unidad1/tema1/multiprocesamiento.gif" width="300px">
+                <p>
+                    Hay dos tipos principales de arquitectura de multiprocesamiento: simétrica y asíncrona. En un sistema de multiprocesamiento simétrico (SMP), todos los procesadores comparten la misma memoria y se pueden ejecutar tareas de manera independiente. En un sistema de multiprocesamiento asíncrono (AMP), cada procesador tiene su propia memoria y se utiliza para tareas específicas.
+                </p>
+                <p>
+                    La arquitectura de multiprocesamiento se utiliza en una variedad de sistemas informáticos, desde servidores empresariales hasta computadoras personales. Los sistemas de multiprocesamiento pueden mejorar significativamente el rendimiento y la eficiencia de los sistemas informáticos al permitir que varios procesadores trabajen en tareas simultáneamente.
+                </p>
+            </div>
+        </div>
+        <div class="tituloTemas wrapper">
+            1.2 Análisis de los Componentes
+        </div>
+        <section>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="../media/unidad1/tema2/slider/arquitectura.png" style="padding-top: 20px;" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">1.2.1 Arquitecturas</h2>
+                                <p class="description">
+                                    1.2.1.1 Unidad Central de Procesamiento <br>
+                                    1.2.1.2 Unidad Aritmética Lógica <br>
+                                    1.2.1.3 Registros <br>
+                                    1.2.1.4 Buses <br>
+                                </p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="../media/unidad1/tema2/slider/memoria.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">1.2.2 Memoria</h2>
+                                <p class="description">
+                                    1.2.2.1 Conceptos Básicos del Manejo de la Memoria <br>
+                                    1.2.2.2 Memoria principal <br>
+                                    1.2.2.3 Memoria Caché <br>
+                                </p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="../media/unidad1/tema2/slider/manejoES.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">1.2.3 Manejo de E/S </h2>
+                                <p class="description">
+                                    1.2.3.1 Módulos de E/S <br>
+                                    1.2.3.2 E/S Programada <br>
+                                    1.2.3.3 E/S Mediante Interrupciones <br>
+                                    1.2.3.4 Acceso Directo a Memoria <br>
+                                    1.2.3.5 Canales y Procesadores de E/S <br>
+                                </p>
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="../media/unidad1/tema2/slider/bus.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">1.2.4 Buses</h2>
+                                <p class="description">
+                                    1.2.4.1 Tipos de Buses <br>
+                                    1.2.4.2 Estructura de los Buses <br>
+                                    1.2.4.3 Jerarquías de Bases <br>
+                                </p>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="../media/unidad1/tema2/slider/interruptores.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">1.2.5 Interruptores</h2>
+    
+                                <button class="button">View More</button>
+                            </div>
+                        </div>
+            
+                        <div class="card swiper-slide">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- En este div se va a ir poniendo la info. de los temas -->
+        <div>
+            <div class="tituloSubtemas">
+                Arquitecturas
+            </div>
+            <div class = "arquitecturas">
+                <!-- CPU-->
+                <div class='estiloSubtemas'>
+                    <p class='estiloSubtemas'>Unidad Central de Procesamiento</p>
+                    <p class='ingles'>Central Processing Unit</p>
+                    <p class='contenidoLista' style='text-align: center;'>
+                        La CPU es la parte central del procesamiento de una computadora. Es la encargada del procesamiento de todas las instrucciones que provienen del hardware y del software.
+                    </p>
+                    <div>
+                        <img src = "../media/unidad1/tema2/arquitecturas/CPU.png">
+                    </div>
+                </div>
+                <!-- ALU -->
+                <div class='estiloSubtemas'>
+                    <p class='estiloSubtemas'>Unidad Arimética Lógica</p>
+                    <p class='ingles'>Arithmetic-Logic Unit</p>
+                    <p class='qEs'>
+                        La arquitectura de la ALU puede variar dependiendo del procesador y la implementación específica, pero en general consta de los siguientes componentes:
+                    </p>
+                    <div style='display: flex; flex-direction: row; gap:4em;'>
+                        <div>
+                            <p class='tituloLista'>Registros:</p> 
+                            <p class='contenidoLista'>La ALU tiene un conjunto de registros que almacenan temporalmente los operandos que se van a utilizar en las operaciones aritméticas y lógicas.</p>
+                            <p class='tituloLista'>Unidad lógica:</p>
+                            <p class='contenidoLista'>La unidad lógica es responsable de realizar operaciones lógicas como AND, OR, NOT, XOR, y desplazamiento de bits.</p>    
+                            <p class='tituloLista'>Unidad aritmética: </p>
+                            <p class='contenidoLista'>La unidad aritmética es responsable de realizar operaciones aritméticas como suma, resta, multiplicación, división y módulo.</p>
+                        </div>
+                        <div>
+                            <p class='tituloLista'>Multiplexores:</p>
+                            <p class='contenidoLista'>Los multiplexores son componentes que permiten seleccionar uno de varios valores de entrada para ser utilizados como operandos en las operaciones de la ALU.</p>
+                        
+                            <p class='tituloLista'>Compuertas lógicas:</p>
+                            <p class='contenidoLista'>Las compuertas lógicas son componentes electrónicos que realizan operaciones lógicas básicas como AND, OR y NOT.</p>
+                        
+                            <p class='tituloLista'>Decodificador:</p>
+                            <p class='contenidoLista'>El decodificador es responsable de identificar la operación que se va a realizar y configurar la ALU para que realice la operación correcta.</p>
+                        
+                            <p class='tituloLista'>Unidad de control:</p>
+                            <p class='contenidoLista'>La unidad de control es responsable de controlar la secuencia de operaciones que realiza la ALU y coordinar su funcionamiento con el resto de la CPU.</p>
+                        </div>    
+                    </div>
+                    <div class='estiloSubtemas'>
+                        <img src = '../media/unidad1/tema2/arquitecturas/alu.gif' width='70%' style='border-radius: 4px; opacity: 0.9; padding-top: 15px;'>
+                    </div>
+                </div>
+            </div>
+            <!-- aquí termina esa fila de a dos-->
+            <div class='estiloSubtemas' >
+                <p class='estiloSubtemas'>Registros</p>
+                <div style='display: flex; flex-direction: row;'>
+                    <div style="padding-left: 50px; margin-left: 10px;">
+                        <img src = '../media/unidad1/tema2/arquitecturas/registros.gif' width='500px'>
+                    </div>
+                    <div class='introductorio'>
+                        <p>En el contexto de la informática y la electrónica, un registro es un componente de almacenamiento de datos en un circuito digital. Esencialmente, un registro es un grupo de flip-flops (circuitos que pueden almacenar un valor binario de 0 o 1) que están conectados en serie.</p>
+                        <br>
+                        <p>Es una memoria que esta ubicada en el procesador y se encuentra en el nivel más alto en la jerarquía de memoria, por lo tanto tiene una alta velocidad pero con poca capacidad para almacenar datos que va desde los 4 bits hasta los 64 bits dependiendo del procesador que se utilice. Los datos que almacena son los que se usan frecuentemente</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 4em; padding-top: 50px; margin-right: 40px; margin-left: 20px;">
+                    <div>
+                        <p class='tituloLista'>Registros GPR</p>
+                        <p class='registroQes'>Registros de propósito general (General Purpose Registers)</p>
+                        
+                        <p class='preInfo'>AX, AH, AL (Acumulador):</p>
+                        <p class='contenidoLista'>Conserva el resultado temporal después de una operación aritmética o lógica.</p>
+                        <p class='preInfo'>BX, BH, BL (Base):<p>
+                        <p class='contenidoLista'> Se utiliza para guardar la dirección base de listas de datos en la memoria.</p>
+                        <p class='preInfo'>CX, CH, CL (Contador):</p> 
+                        <p class="contenidoLista">Contiene el conteo para ciertas instrucciones de
+                            corrimientos y rotaciones, de iteraciones en el ciclo loop y operaciones
+                            repetidas de cadenas.
+                        </p> 
+                        
+                        <p class='preInfo'>DX, DH, DL (Datos):</p>
+                        <p class='contenidoLista'>Contiene la parte más significativa de un producto
+                            después de una multiplicación; la parte más significativa del dividendo
+                            antes de la división.
+                        </p> 
+
+                    </div>
+                    <div>
+                        <p class='tituloLista'>Registros de Índices y Apuntadores</p>
+                        <p class = 'preInfo'>SP (Apuntador de pila): </p>
+                        <p class='contenidoLista'>Contiene el desplazamiento con respecto al segmento de pila del tope de la pila del programa.
+                        </p>
+                        <p class = 'preInfo'>BP (Apuntador de base): </p>
+                        <p class='contenidoLista'>Contiene el desplazamiento con respecto al segmento de pila de datos almacenados en la pila de un programa.</p>
+
+                        <p class = 'preInfo'>DI (Índice destino):</p>
+                        <p class='contenidoLista'>Contiene el desplazamiento con respecto al segmento extra de un elemento de una cadena o arreglo.</p>
+
+                        <p class = 'preInfo'>SI (Índice fuente):</p>
+                        <p class='contenidoLista'>Contiene el desplazamiento con respecto al segmento de datos de un elemento de un arreglo o cadena.</p>
+
+                        <p class = 'preInfo'>IP (Apuntador de instrucciones):</p>
+                        <p class='contenidoLista'>Desplazamiento con respecto al segmento de código de la localidad de memoria que contiene la siguiente instrucción que va a ejecutar el microprocesador.</p>
+                    </div>
+                    <div>
+                        
+                        <p class='tituloLista'>Registros de Segmentos</p>
+                        <p class = 'preInfo'>CS (Código): </p>
+                        <p class='contenidoLista'>Tiene la dirección lógica del segmento en que se encuentra el código de un programa. Si el código ocupa más de un segmento, contiene la dirección lógica de uno de los segmentos.</p>
+                        
+                        <p class = 'preInfo'>DS (Datos):</p> 
+                        <p class='contenidoLista'>Tiene la dirección lógica del segmento en que se encuentran los datos estáticos de un programa. </p>
+                        
+                        <p class = 'preInfo'>ES (Extra): </p>
+                        <p class='contenidoLista'>Este registro también tiene la dirección lógica de uno de los segmentos en que se encuentran los datos estáticos de un programa. </p>
+                        
+                        <p class = 'preInfo'>SS (Pila): </p>
+                        <p class='contenidoLista'>Tiene la dirección lógica del segmento en que se encuentran la pila del sistema. La pila no puede ser mayor a un segmento.</p>
+                        
+                    </div>
+                </div>
+
+                <!-- parte 2 de los registros-->
+                <div style='display: flex; flex-direction: column; padding-top: 20px; margin-right: 40px; margin-left: 20px; padding-bottom: 100px;'>
+                    <div style='padding-bottom: 20px;'>
+                        <p class='tituloLista'>Registros de Control</p>
+                        <p class='registroQes'>Se utilizan para controlar las operaciones del procesador, la mayor parte de estos registros no son visibles al usuario y algunos pueden ser accesibles a las instrucciones de maquina ejecutadas en un modo de control.</p>
+                    </div>
+                    <div style='display: flex; flex-direction: row; gap: 4em;'>
+                        <div>
+                            <p class='preInfo'>Registro de direcciones de memoria (MAR)</p>
+                            <p class='contenidoLista'>Contiene la dirección en donde se efectuará la próxima lectura o escritura de datos. El numero de direcciones depende del tamaño de la MAR.</p>
+                            <p class='preInfo'>Registro de datos de memoria (MBR)</p>
+                            <p class='contenidoLista'>Contiene los datos que van a ser escritos en la memoria o los que fueron leídos en ella.</p>
+                            <p class='preInfo'>Registro de direcciones de entrada y salida (I/O AR)</p>
+                            <p class='contenidoLista'>Especifica al dispositivo ya sea de entrada o salida.</p>
+                        </div>
+                        <div>
+                            <p class='preInfo'>Registro de datos de entrada y salida (I/O BR)</p>
+                            <p class='contenidoLista'>Es una área temporal en donde se lleva a cabo el intercambio de datos entre el procesador y el dispositivo de entrada y salida que esta especificado en IOAR.</p>
+                            <p class='preInfo'>Registro de instrucciones (IR)</p>
+                            <p class='contenidoLista'>Contiene la dirección de la siguiente instrucción que se va a ejecutar.</p>
+                            <p class='preInfo'>Palabras de estado del programa (PSW)</p>
+                            <p class='contenidoLista'>contiene códigos de condición junto con otras informaciones de estado como el signo, acarro, desbordamiento, entre otras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Aquí termina registros-->
+            <div style='margin-bottom: 110px; margin-right: 20px;'>
+                <p class='estiloSubtemas'>Buses</p>
+                <div style='display: flex; flex-direction: row; gap: 4em; margin-left: 30px;margin-right: 20px;'>
+                    <img src='../media/unidad1/tema2/arquitecturas/bus.png'>
+                    <div>
+                        <div style='align-items: center; align-content: center; text-align: center; font-size: 25px; font-weight: 500; color: #24272e;'>
+                            En el contexto de la informática y la electrónica, un bus (o bús) se refiere a un conjunto de líneas de comunicación que se utilizan para transmitir datos entre los componentes de un sistema digital. Un bus puede estar compuesto por una o varias líneas de transmisión, cada una de las cuales lleva información en una dirección específica.
+                        </div>
+                        <div>
+                            <p class='preInfo'>Líneas de datos:</p> 
+                            <p class='contenidoLista'>Son las líneas que se utilizan para transferir los datos entre los diferentes componentes de la computadora.</p>
+                            <p class='preInfo'>Líneas de control: </p>
+                            <p class='contenidoLista'> Son las líneas que se utilizan para controlar el flujo de datos y las operaciones en la computadora.</p>
+                            <p class='preInfo'>Bus de direcciones:</p>
+                            <p class='contenidoLista'> Es el bus que se utiliza para enviar direcciones de memoria y dispositivos a la CPU.</p>
+                            <p class='preInfo'>Bus de control:</p>
+                            <p class='contenidoLista'> Es el bus que se utiliza para enviar señales de control a los diferentes componentes de la computadora. </p>
+                            <p class='preInfo'>Bus de sistema:</p> 
+                            <p class='contenidoLista'> Es el bus que se utiliza para conectar la CPU y la memoria principal. Este bus es uno de los componentes más importantes de una computadora, ya que es el camino por el cual se realizan la mayoría de las operaciones de lectura y escritura.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Arquitectura de Computadoras <br> 17:00 - 18:00</h3>
+                <p>Instituto Tecnológico de Saltillo</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/TecNMcampusSaltillo"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/tecnmitsaltillo/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://saltillo.tecnm.mx/"><i class="fa fa-google"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Ciclo Escolar Enero-Junio 2023. Alumna: <span>Alma Rosaura Mía Morales Ramírez 21051474</span></p>
+            </div>
+        </footer>
+    </div>
+    <!-- Swiper JS -->
+    <script src="../js/swiper-bundle.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+    </body>
+</html>
