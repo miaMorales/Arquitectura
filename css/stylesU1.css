@@ -217,7 +217,7 @@ div.arquitecturas{
   padding: 0;
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 3em;
   padding: 3%;
 }
 
