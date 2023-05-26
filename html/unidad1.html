@@ -134,7 +134,7 @@
                                     1.2.1.4 Buses <br>
                                 </p>
     
-                                <button class="button">View More</button>
+                                <button class="button" onclick="boton1Arquitecturas()">View More</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -154,7 +154,7 @@
                                     1.2.2.3 Memoria Caché <br>
                                 </p>
     
-                                <button class="button">View More</button>
+                                <button class="button" onclick = "boton2Memorias()">View More</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -175,7 +175,7 @@
                                     1.2.3.4 Acceso Directo a Memoria <br>
                                     1.2.3.5 Canales y Procesadores de E/S <br>
                                 </p>
-                                <button class="button">View More</button>
+                                <button class="button" onclick="boton3ES()">View More</button>
                             </div>
                         </div>
                         
@@ -193,10 +193,10 @@
                                 <p class="description">
                                     1.2.4.1 Tipos de Buses <br>
                                     1.2.4.2 Estructura de los Buses <br>
-                                    1.2.4.3 Jerarquías de Bases <br>
+                                    1.2.4.3 Jerarquías de Buses <br>
                                 </p>
     
-                                <button class="button">View More</button>
+                                <button class="button" onclick="boton4Buses()">View More</button>
                             </div>
                         </div>
                         <div class="card swiper-slide">
@@ -209,9 +209,9 @@
                             </div>
     
                             <div class="card-content">
-                                <h2 class="name">1.2.5 Interruptores</h2>
+                                <h2 class="name">1.2.5 Interrupciones</h2>
     
-                                <button class="button">View More</button>
+                                <button class="button" onclick="boton5Interrupciones()">View More</button>
                             </div>
                         </div>
             
@@ -227,7 +227,8 @@
             </div>
         </section>
         <!-- En este div se va a ir poniendo la info. de los temas -->
-        <div>
+        <!-- DIV DEL SUBTEMA DE ARQUITECTURAS -->
+        <div id = "boton1" onclick = "boton1Arquitecturas()" style = "display:none">
             <div class="tituloSubtemas">
                 Arquitecturas
             </div>
@@ -401,6 +402,189 @@
                 
             </div>
         </div>
+
+        <!-- DIV DEL SUBTEMA DE MEMORIAS -->
+        <div id = "boton2" style = "display: none;">
+            <div class="tituloSubtemas">
+                Memorias
+            </div>
+            <!-- Subtema 1-->
+            <div>
+                <p class="estiloSubtemas">Conceptos básicos del manejo de la memoria</p>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Memoria: </p>
+                        <p class="contenidoLista">Es el espacio físico o lógico en el que se almacenan los datos y las instrucciones de un programa mientras se ejecuta. La memoria se organiza en celdas o ubicaciones de memoria, cada una con una dirección única.</p>
+                        <p class="tituloLista">Dirección de memoria:</p>
+                        <p class="contenidoLista">Es un valor numérico que identifica la ubicación de una celda de memoria específica. Las direcciones de memoria se utilizan para acceder y manipular los datos almacenados en la memoria.</p>
+                        <p class="tituloLista">Asignación de memoria:</p>
+                        <p class="contenidoLista">Es el proceso de reservar y asignar espacios de memoria para almacenar datos durante la ejecución de un programa. En lenguajes de programación de más alto nivel, como C++ o Java, la asignación de memoria puede ser explícita (mediante la declaración de variables) o implícita (a través de la creación de objetos).</p>
+                        <p class="tituloLista">Liberación de memoria:</p>
+                        <p class="contenidoLista">Es el proceso de liberar el espacio de memoria que se ha asignado previamente cuando ya no es necesario. Si no se libera la memoria adecuadamente, puede generar fugas de memoria, lo que puede afectar el rendimiento del sistema.</p>
+                    </div>
+                    <div>
+                        <p class="tituloLista">Fragmentación de la memoria:</p>
+                        <p class="contenidoLista">Es un fenómeno en el que la memoria se divide en bloques más pequeños y no contiguos debido a la asignación y liberación de memoria a lo largo del tiempo. Puede haber dos tipos de fragmentación: fragmentación interna (cuando se asigna más memoria de la necesaria) y fragmentación externa (cuando hay suficiente memoria total, pero no se encuentra disponible en bloques contiguos).</p>
+                        <p class="tituloLista">Gestión de la memoria:</p>
+                        <p class="contenidoLista">Es el conjunto de técnicas y algoritmos utilizados para administrar el uso eficiente de la memoria en un sistema. Incluye la asignación y liberación de memoria, la protección de la memoria contra accesos no autorizados y la resolución de problemas de fragmentación.</p>
+                        <p class="tituloLista">Punteros:</p>
+                        <p class="contenidoLista">Son variables especiales que almacenan direcciones de memoria en lugar de valores. Los punteros son ampliamente utilizados en el manejo de la memoria, ya que permiten acceder y manipular datos almacenados en ubicaciones de memoria específicas.</p>
+                        <p class="tituloLista">Tamaño de la memoria:</p>
+                        <p class="contenidoLista">Es la cantidad total de espacio de almacenamiento disponible en un sistema. El tamaño de la memoria puede variar según el hardware y las limitaciones del sistema operativo.</p>
+                        <p class="tituloLista">Memoria virtual:</p>
+                        <p class="contenidoLista">Es una técnica utilizada por los sistemas operativos modernos para administrar la memoria de manera eficiente. Permite que el espacio de direcciones utilizado por un programa sea más grande que la memoria física disponible, al utilizar el almacenamiento en disco como extensión de la memoria.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Subtema 2 y 3-->
+            <div class="arquitecturas">
+                <div class = "Memoria principal">
+                    <p class="estiloSubtemas"> Memoria RAM </p>
+                    <p class="ingles"> Random Access Memory</p>
+                    <p class="qEs">La memoria principal es un componente crítico en el funcionamiento de cualquier sistema informático, ya que afecta directamente el rendimiento y la capacidad de respuesta del sistema.</p>
+
+                    <p class="tituloLista">Definición: </p>
+                    <p class="contenidoLista">La memoria principal es un tipo de memoria de acceso aleatorio en la que se almacenan temporalmente datos y programas que están siendo utilizados activamente por la CPU (Unidad Central de Procesamiento) de un ordenador.</p>
+                    <p class="tituloLista">Función:</p>
+                    <p class="contenidoLista">La función principal de la memoria principal es proporcionar un espacio de almacenamiento rápido y accesible para los datos y las instrucciones que se utilizan durante la ejecución de un programa. Permite a la CPU acceder rápidamente a los datos necesarios para llevar a cabo las operaciones y manipulaciones requeridas.</p>
+                    <p class="tituloLista">Organización:</p>
+                    <p class="contenidoLista">La memoria principal se organiza en celdas o ubicaciones de memoria, cada una con una dirección única. Estas celdas se agrupan en unidades llamadas palabras de memoria, que representan la cantidad de datos que se pueden leer o escribir en una operación de memoria.</p>
+                    <p class="tituloLista">Características:</p>
+                    <p class = "preInfo">Velocidad de acceso:</p>
+                    <p class="contenidoLista"> La memoria principal se caracteriza por su velocidad de acceso, que determina qué tan rápido se pueden leer o escribir los datos en ella.</p>
+                    <p class = "preInfo">Capacidad:</p>
+                    <p class="contenidoLista"> La memoria principal se caracteriza por su capacidad, que indica la cantidad total de datos que se pueden almacenar en la memoria principal.</p>
+                    <p class="tituloLista">Jerarquía de memoria:</p>
+                    <p class="contenidoLista">La memoria principal forma parte de la jerarquía de memoria de un sistema informático, que también incluye otros niveles de memoria como la memoria caché y el almacenamiento secundario (disco duro, SSD). Esta jerarquía se organiza de manera que los datos más frecuentemente utilizados se almacenan en los niveles de memoria más rápidos y cercanos a la CPU.</p>    
+                    
+                </div>
+                <div class = "Memoria Caché">
+                    <p class="estiloSubtemas"> Memoria Caché </p>
+                    <p class="qEs">La memoria caché es un tipo de memoria de alta velocidad y reducido tamaño que se utiliza en los sistemas informáticos para mejorar el rendimiento al reducir los tiempos de acceso a los datos más utilizados.</p>
+                    <p class="tituloLista">Función:</p>
+                    <p class="contenidoLista">La memoria caché tiene como función principal almacenar copias de los datos y las instrucciones más utilizados por la CPU. Su objetivo es proporcionar un acceso rápido a estos datos, reduciendo la necesidad de acceder a la memoria principal más lenta.</p>
+                    <p class="tituloLista">Organización:</p>
+                    <p class="contenidoLista">La memoria caché se organiza en niveles, donde cada nivel tiene diferentes capacidades y tiempos de acceso. El nivel más cercano a la CPU es la caché de nivel 1 (L1), seguida de la caché de nivel 2 (L2) y, en algunos sistemas, la caché de nivel 3 (L3). Cuanto más cerca se encuentra la caché de la CPU, más rápida es, pero también es más pequeña y costosa.</p>
+                    <p class="tituloLista">Principio de localidad:</p>
+                    <p class="contenidoLista">El funcionamiento de la memoria caché se basa en el principio de localidad, que indica que los programas tienden a acceder repetidamente a un conjunto limitado de datos y ubicaciones de memoria cercanas. La memoria caché aprovecha este principio almacenando los datos más utilizados en niveles de memoria más rápidos.</p>
+                    <p class="tituloLista">Jerarquía de memoria:</p>
+                    <p class="contenidoLista">La memoria caché forma parte de la jerarquía de memoria de un sistema, donde se encuentra por encima de la memoria principal y por debajo del registro de la CPU. La jerarquía de memoria se organiza de manera que los niveles de caché más cercanos a la CPU tienen menor capacidad pero son más rápidos, mientras que los niveles más alejados tienen mayor capacidad pero son más lentos.</p>    
+                </div>
+            </div>
+        </div>
+
+        <!-- DIV DEL SUBTEMA DE MANEJO DE E/S -->
+        <div id = "boton3" style = "display: none">
+            <div class = "tituloSubtemas">Manejo de la Entrada / Salida</div>
+            <div class = "tituloTemas" style = "gap:5em;">
+                <p class='contenidoLista' style='text-align: center;'>El manejo de E/S y sus diferentes técnicas son fundamentales para el funcionamiento eficiente de los sistemas informáticos, permitiendo la comunicación fluida entre el sistema y los dispositivos periféricos. Cada método de E/S tiene sus ventajas y desventajas, y su elección depende de las características del sistema y los requisitos específicos de las aplicaciones.</p>
+            </div>
+            <div class = "arquitecturas">
+                <div>
+                    <p class = "estiloSubtemas">Módulos de E/S</p>
+                    <p class = "contenidoLista">Los módulos de E/S, también conocidos como controladores de dispositivos, son componentes hardware o software que se utilizan para controlar y coordinar las operaciones de E/S entre el sistema y los dispositivos periféricos. Estos módulos actúan como intermediarios entre la CPU y los dispositivos, encargándose de la traducción de las operaciones de E/S a un formato comprensible para el dispositivo y viceversa. Cada dispositivo periférico tiene asociado un módulo de E/S específico para su control.</p>
+                </div>
+            
+                <div>
+                    <p class="estiloSubtemas">E/S Programada</p>
+                    <p class="contenidoLista">La E/S programada es un método de realizar operaciones de E/S en el que la CPU se encarga de controlar directamente las transferencias de datos entre los dispositivos periféricos y la memoria. En este método, la CPU ejecuta instrucciones de E/S específicas para leer o escribir datos en los puertos de E/S del dispositivo periférico. La E/S programada es adecuada para dispositivos de baja velocidad y operaciones de E/S ocasionales, pero puede llevar a un uso ineficiente de la CPU y afectar el rendimiento general del sistema.</p>
+                </div> 
+            </div>
+            <div class = "arquitecturas">
+                <div>
+                    <p class="estiloSubtemas">E/S Mediante interrupciones</p>
+                    <p class="contenidoLista">La E/S mediante interrupciones es un método de realizar operaciones de E/S en el que la CPU puede delegar el control de las transferencias de datos a un módulo de E/S específico. Cuando ocurre una operación de E/S, el dispositivo periférico envía una señal de interrupción a la CPU, indicando que necesita atención. La CPU pausa su ejecución actual y atiende la interrupción, transfiriendo el control al módulo de E/S correspondiente para realizar la transferencia de datos. Este método permite que la CPU realice otras tareas mientras espera que se complete la operación de E/S, mejorando la eficiencia y el rendimiento del sistema.</p>
+                </div>
+                <div>
+                    <p class="estiloSubtemas">Acceso Directo a Memoria</p>
+                    <p class="contenidoLista">El acceso directo a memoria (DMA, Direct Memory Access) es una técnica utilizada para mejorar la eficiencia de las transferencias de datos entre dispositivos periféricos y la memoria del sistema. Con DMA, el módulo de E/S tiene acceso directo a la memoria sin la intervención constante de la CPU. En lugar de transferir los datos a través de la CPU, el módulo de DMA toma el control del bus de datos y realiza la transferencia directamente entre el dispositivo periférico y la memoria, liberando así a la CPU para realizar otras tareas. Esto permite un uso más eficiente de los recursos del sistema y acelera las operaciones de E/S de alta velocidad.</p>
+                </div>
+            </div>
+            <div class = "columnas">
+                <div>
+                    <p class="estiloSubtemas">Canales y Procesadores de E/S</p>
+                    <p class="contenidoLista">Los canales y procesadores de E/S son componentes utilizados en sistemas informáticos para acelerar y gestionar las operaciones de E/S. Un canal de E/S es un controlador dedicado que se encarga de manejar múltiples dispositivos periféricos y coordinar las transferencias de datos entre ellos y la memoria. El canal opera de forma independiente de la CPU y utiliza técnicas como el acceso directo a memoria para optimizar las operaciones de E/S. Por otro lado, los procesadores de E/S son unidades de procesamiento especializadas que se utilizan para realizar operaciones de E/S complejas y de alta velocidad, como el procesamiento de datos en tiempo real. Estos procesadores están diseñados para realizar tareas específicas de E/S y aliviar la carga de la CPU principal.</p>
+                </div>
+            </div>
+        </div>
+         <!-- DIV DEL SUBTEMA DE MANEJO DE BUSES -->
+         <div id = "boton4" style = "display: none;">
+            <div class = "tituloSubtemas">
+                Buses
+            </div>
+            <div class="tituloTemas">
+                <p class = "contenidoLista" style='text-align: center;'>En informática, un bus se refiere a un sistema de comunicación que permite la transferencia de datos entre los componentes de hardware de un sistema informático. Los buses actúan como canales de comunicación y permiten que los diferentes dispositivos dentro de un sistema intercambien información.</p>
+            </div>
+            <!--SUBTEMA 1-->
+            <div>
+                <p class="estiloSubtemas">Tipos de buses</p>
+                <p class="qEs">Existen varios tipos de buses utilizados en los sistemas informáticos. Algunos de los tipos más comunes son:</p>
+                <div class = "arquitecturas">
+                    <div>
+                    <p class="tituloLista">Bus del sistema:</p>
+                    <p class="contenidoLista">Es el bus principal que conecta la CPU, la memoria y otros dispositivos principales en un sistema informático. Facilita la transferencia de datos y las señales de control entre estos componentes.</p>
+                    </div>
+                    <div>
+                    <p class="tituloLista">Bus de datos:</p>
+                    <p class="contenidoLista">Es el bus a través del cual se transmiten los datos entre los diferentes componentes de un sistema. Permite la transferencia de información en forma binaria (bits) o en forma de bytes.</p>
+                    </div>
+                </div>
+                <div class = "arquitecturas">
+                    <div>
+                    <p class="tituloLista">Bus de direcciones:</p>
+                    <p class="contenidoLista">Este bus se utiliza para transmitir las direcciones de memoria o ubicaciones de los datos que se están accediendo. Permite a la CPU y otros dispositivos especificar la ubicación de la memoria o los registros que desean leer o escribir.</p>
+                    </div>
+                    <div>
+                    <p class="tituloLista">Bus de control:</p>
+                    <p class="contenidoLista">Es responsable de enviar señales de control que coordinan y sincronizan las operaciones de los dispositivos dentro del sistema. Controla el flujo de datos y las operaciones de lectura/escritura.</p>
+                    </div>
+                </div>
+                <div class = "arquitecturas">
+                    <div>
+                        <p class="estiloSubtemas">Estructura de los Buses</p>
+                        <p class="contenidoLista">Los buses se estructuran en líneas de comunicación físicas a lo largo de las cuales se transmiten los datos, las direcciones y las señales de control. Cada línea del bus tiene una función específica y está diseñada para transmitir un tipo particular de información. <br>Por ejemplo, un bus de datos de 8 bits tiene 8 líneas de comunicación que transmiten 8 bits de datos simultáneamente. Un bus de direcciones de 16 bits tiene 16 líneas para transmitir direcciones de memoria de 16 bits.</p>
+                        
+                        <div class="imagen" style="background-color: #fafafa;"><img src = "../media/unidad1/tema2/buses/buses.png"></div>
+                    </div>
+                    <div>
+                        <p class="estiloSubtemas">Jerarquía de Buses</p>
+                        <p class="contenidoLista">En un sistema informático, los buses también pueden organizarse en una jerarquía. Los buses de nivel superior, como el bus del sistema, son más rápidos y pueden manejar mayores volúmenes de datos. Los buses de nivel inferior, como los buses internos de los componentes, pueden ser más especializados y están diseñados para una comunicación más rápida y eficiente dentro de un dispositivo específico. <br> La jerarquía de buses permite una comunicación eficiente y efectiva entre los componentes del sistema, asegurando un flujo de datos adecuado y una coordinación adecuada de las operaciones.</p>
+                        <div class="imagen"> 
+                            <img src = "../media/unidad1/tema2/buses/jerarquia.png" style="width: 500px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- DIV DEL SUBTEMA DE INTERRUPCIONES -->
+         <div id = "boton5" style = "display: none;">
+            <div class = "tituloSubtemas"> Interrupciones</div>
+            <div class = "columnas" style="padding: 50px; padding-bottom: 5px;">
+                <p class="contenidoLista">
+                    Las interrupciones son eventos que ocurren durante la ejecución de un programa y requieren la atención inmediata del sistema. Estas interrupciones pueden ser generadas por dispositivos periféricos, como teclados o discos duros, o pueden ser generadas internamente por el propio sistema.
+
+                    <br>Cuando se produce una interrupción, el procesador suspende temporalmente la ejecución del programa actual y pasa a ejecutar una rutina de servicio de interrupción (ISR, por sus siglas en inglés). La ISR es un código especializado que se encarga de manejar la interrupción específica y realizar las acciones necesarias.
+
+                    <br>Las interrupciones permiten que el sistema informático pueda manejar eventos de forma asíncrona, es decir, sin depender de la secuencia de instrucciones en el programa principal. Esto es especialmente útil en situaciones donde se requiere una respuesta rápida, como la entrada de datos desde un dispositivo externo.
+
+                    <br>Existen varios tipos de interrupciones, entre los cuales se incluyen:
+                </p>
+            </div>
+            <div class = "arquitecturas">
+                <div>
+                    <p class="tituloLista">Interrupciones software:</p>
+                    <p class="contenidoLista">Son generadas por instrucciones específicas del programa. El programa puede solicitar una interrupción para realizar una operación determinada o para llamar a una función específica. Estas interrupciones son controladas por el sistema operativo y se ejecuta la ISR correspondiente.</p>
+                </div>
+                <div>
+                    <p class="tituloLista">Excepciones:</p>
+                    <p class="contenidoLista">Son interrupciones generadas por condiciones anómalas o errores durante la ejecución de un programa, como divisiones por cero o acceso a memoria no permitida. Estas interrupciones son manejadas por el sistema operativo o el procesador y pueden resultar en la finalización del programa o la generación de un informe de error.</p>
+                </div>
+                <div>
+                    <p class="tituloLista">Interrupciones hardware:</p>
+                    <p class="contenidoLista">Son generadas por eventos físicos externos, como la pulsación de un botón o la finalización de una operación de entrada/salida. Estas interrupciones son atendidas por el hardware del sistema, que genera la correspondiente ISR para manejar la interrupción.</p>
+                </div>
+            </div>
+        </div> <!-- NO QUITAR-->
         <footer>
             <div class="footer-content">
                 <h3>Arquitectura de Computadoras <br> 17:00 - 18:00</h3>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src = "../js/header.js"></script>
+    <link rel="stylesheet" href="../css/stylesU1.css">
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="contenedorDIV">
+        <header class = "header2">
+            <div class="wrapper">
+                <div class="logo">
+                    Unidad &nbsp; 2
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="unidad1.html">Unidad 1</a>
+                    <a href="unidad3.html">Unidad 3</a>
+                    <a href="unidad4.html">Unidad 4</a>
+                    <a href="practicas.html">Prácticas</a>
+                </nav>
+            </div>
+        </header>
+        <div class="tituloTemas wrapper">
+            2.1 Organización del procesador
+            <img src = "../media/unidad2/cpu.png" width = "200px">
+        </div>
+        <div class = "columnas" style="padding: 50px; padding-bottom: 5px;">
+            <p class="contenidoLista" style="font-size: 25px;">
+                La organización del procesador se refiere a la estructura interna de un procesador o unidad central de procesamiento (CPU) en un sistema informático. Esta organización está diseñada para ejecutar instrucciones de manera eficiente y gestionar los recursos del sistema de manera efectiva. A continuación, se detallan los aspectos clave de la organización del procesador:
+            </p>
+        </div>
+        <div class="arquitecturas">
+            <div>
+                <p class="tituloLista">Unidad de Control:</p>
+                <p class="contenidoLista">La unidad de control es responsable de coordinar y controlar las operaciones del procesador. Se encarga de interpretar las instrucciones, enviar señales de control adecuadas a otras partes del procesador y asegurarse de que las instrucciones se ejecuten en el orden correcto.</p>
+                <div>
+                    <p class="tituloLista">Memoria:</p>
+                    <p class="contenidoLista">El procesador tiene acceso a diferentes niveles de memoria para almacenar y recuperar datos e instrucciones. Esto incluye la memoria caché, la memoria principal (RAM) y la memoria secundaria (como discos duros o SSD). El procesador utiliza la memoria caché para almacenar temporalmente los datos e instrucciones más utilizados, lo que permite acceder a ellos más rápidamente que si se accediera directamente a la memoria principal.</p>
+                </div>
+            </div>
+            <div>
+                <p class="tituloLista">Unidad de Procesamiento:</p>
+                <p class="contenidoLista">La unidad de procesamiento o Unidad Aritmético-Lógica (ALU) es la encargada de realizar operaciones aritméticas y lógicas. Esto incluye operaciones como sumar, restar, multiplicar, dividir y realizar operaciones lógicas como AND, OR y NOT. La ALU también puede realizar comparaciones entre valores y tomar decisiones basadas en los resultados.</p>
+                <div>
+                    <p class="tituloLista">Buses:</p>
+                    <p class="contenidoLista">Los buses son canales de comunicación que permiten la transferencia de datos y señales de control entre diferentes componentes del procesador y otros dispositivos del sistema. Hay diferentes tipos de buses, como el bus de datos (para transferir datos), el bus de direcciones (para especificar la ubicación de datos o instrucciones en la memoria) y el bus de control (para enviar señales de control).</p>
+                </div>
+            </div>
+        </div>
+        <div class="imagen" style="background-color: #EFEFEF;">
+            <img src ="../media/unidad2/organizacionDelProcesador.png" width="500px">
+        </div>
+        
+        <!-- SUBTEMA 2-->
+        <div class="tituloTemas wrapper">
+            2.2 Estructura de Registros
+        </div>
+        <div>
+            <p class="estiloSubtemas">Registros visibles para el usuario</p>
+            <p class="qEs" style="padding: 30px;">
+                Los registros visibles para el usuario son un conjunto de registros en un procesador que están disponibles y accesibles para los programadores y las aplicaciones. Estos registros permiten a los programadores almacenar datos temporales, realizar operaciones y controlar el flujo de ejecución del programa. A continuación, se presentan los registros visibles más comunes en la arquitectura de procesadores modernos:
+            </p>
+            <div class="arquitecturas">
+                <div class="columnas">
+                    <p class="tituloLista">Registros de Propósito General (GPR):</p>
+                    <p class="contenidoLista">Son registros utilizados para almacenar datos temporales y resultados intermedios durante la ejecución del programa. Estos registros son accesibles para el programador y se utilizan para realizar operaciones aritméticas y lógicas, así como para almacenar direcciones de memoria y otros datos necesarios para la ejecución del programa.</p>
+                    <p class="tituloLista">Registro de Puntero de Pila (Stack Pointer - SP): </p>
+                    <p class="contenidoLista">Es un registro que mantiene la dirección de la cima de la pila en la memoria. La pila se utiliza para almacenar datos temporalmente durante la ejecución de subrutinas y funciones. El puntero de pila se actualiza automáticamente a medida que se agregan o eliminan elementos de la pila.</p>     
+                </div>
+                <div class="columnas">
+                    <p class="tituloLista">Registro de Base de Pila (Base Pointer - BP):</p>
+                    <p class="contenidoLista">Es un registro utilizado en algunos sistemas para mantener la dirección base de la pila. Se utiliza como referencia para acceder a los elementos de la pila en relación con la base de la pila.</p>
+                    <p class="tituloLista">Registro de Contador de Programa (Program Counter - PC):</p>
+                    <p class="contenidoLista">Es un registro que almacena la dirección de memoria de la próxima instrucción a ejecutar. A medida que se ejecutan las instrucciones, el contador de programa se incrementa para apuntar a la siguiente instrucción en secuencia.</p>
+                    <p class="tituloLista">Registro de Estado del Programa (Program Status Register - PSR):</p>
+                    <p class="contenidoLista">También conocido como registro de banderas o flags, este registro almacena información sobre el estado actual del programa. Puede contener bits que indican el estado de operaciones aritméticas, resultados de comparaciones, desbordamientos y otras condiciones especiales.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="estiloSubtemas">Registros de Control y de Estados</p>
+            <p class="qEs" style="padding: 30px;">
+                Los registros de control y estados son componentes importantes en la arquitectura de un procesador. Estos registros están diseñados para controlar el funcionamiento y monitorear el estado del procesador durante la ejecución de instrucciones. A continuación, se describen los registros de control y estados más comunes:    
+            </p>
+            <div class="arquitecturas">
+                <div class="columnas">
+                    <div>
+                        <p class="tituloLista">Registro de Control de Programa (PCR):</p>
+                        <p class="contenidoLista">Este registro se utiliza para controlar el flujo de ejecución del programa. Puede almacenar información como la dirección de retorno de una subrutina o la dirección de una interrupción. El contenido de este registro determina la secuencia de instrucciones que se ejecutarán a continuación.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Registro de Control de Interrupciones (ICR):</p>
+                        <p class="contenidoLista">Este registro se utiliza para controlar las interrupciones en el procesador. Las interrupciones son señales que indican que se requiere la atención inmediata del procesador para manejar eventos externos o condiciones especiales. El registro de control de interrupciones puede habilitar o deshabilitar diferentes tipos de interrupciones y establecer prioridades.</p>
+                    </div>
+                </div>
+                <div class="columnas">
+                    <div>
+                        <p class="tituloLista">Registro de Estado del Procesador (PSR):</p>
+                        <p class="contenidoLista">También conocido como registro de estado de banderas o registro de estado de condición, este registro almacena información sobre el estado actual del procesador y las operaciones realizadas. Puede contener bits que indican el estado de operaciones aritméticas, resultados de comparaciones, desbordamientos, habilitación de interrupciones, entre otros. El contenido de este registro afecta el comportamiento y las decisiones tomadas por el procesador.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Registro de Control de Memoria (MCR):</p>
+                        <p class="contenidoLista">Este registro se utiliza para controlar las operaciones de acceso a memoria, como habilitar o deshabilitar la caché, configurar modos de paginación o establecer privilegios de acceso a la memoria. Permite al procesador gestionar el sistema de memoria de manera eficiente y controlada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="estiloSubtemas">Ejemplos de registros de CPU reales</p>
+            <p class="qEs" style="padding: 30px;">
+                Existen diferentes arquitecturas de procesadores y cada una puede tener su propio conjunto de registros. A continuación, se mencionan algunos ejemplos de registros de CPU reales en arquitecturas ampliamente utilizadas:
+            </p>
+            <div class="arquitecturas">
+                <div >
+                    <p class="tituloLista">Arquitectura x86 (Intel y AMD):</p>
+                    <p class="preInfo">EAX, EBX, ECX, EDX: </p>
+                    <p class="contenidoLista">Registros de propósito general utilizados para almacenar datos temporales y resultados de operaciones.</p>
+                    <p class="preInfo">EIP (Instruction Pointer):</p>
+                    <p class="contenidoLista">Registro de puntero de instrucción que almacena la dirección de la siguiente instrucción a ejecutar.</p>
+                    <p class="preInfo">ESP (Stack Pointer):</p>
+                    <p class="contenidoLista"> Registro de puntero de pila que mantiene la dirección de la cima de la pila en la memoria.</p>
+                    <p class="preInfo">EFLAGS:</p>
+                    <p class="contenidoLista">Registro de banderas que almacena información sobre el estado del procesador, como banderas de condición y control.</p>
+                    <p class="preInfo">CR0, CR2, CR3, CR4:</p>
+                    <p class="contenidoLista">Registros de control utilizados para configurar y controlar características específicas del procesador, como paginación de memoria y protección de memoria.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Arquitectura ARM:</p>
+                    <p class="preInfo">R0, R1, R2, ... R15:</p>
+                    <p class="contenidoLista">Registros de propósito general utilizados para almacenar datos temporales y resultados de operaciones.</p>
+                    <p class="preInfo">PC (Program Counter):</p>
+                    <p class="contenidoLista">Registro de contador de programa que almacena la dirección de la próxima instrucción a ejecutar.</p>
+                    <p class="preInfo">SP (Stack Pointer):</p>
+                    <p class="contenidoLista">Registro de puntero de pila que mantiene la dirección de la cima de la pila en la memoria.</p>
+                    <p class="preInfo">CPSR (Current Program Status Register):</p>
+                    <p class="contenidoLista">Registro de estado del programa que contiene información sobre el estado actual del procesador y las banderas.</p>
+                    <p class="preInfo">TTBR (Translation Table Base Register):</p>
+                    <p class="contenidoLista">Registro utilizado en la gestión de la memoria virtual para almacenar la dirección base de las tablas de traducción.</p>
+                </div>
+
+                <div>
+                    <p class="tituloLista">Arquitectura MIPS:</p>
+                    <p class="preInfo">$0, $1, $2, ... $31:</p>
+                    <p class="contenidoLista">Registros de propósito general utilizados para almacenar datos y resultados.</p>
+                    <p class="preInfo">$PC (Program Counter):</p>
+                    <p class="contenidoLista">Registro de contador de programa que almacena la dirección de la próxima instrucción a ejecutar.</p>
+                    <p class="preInfo">$SP (Stack Pointer):</p>
+                    <p class="contenidoLista">Registro de puntero de pila que mantiene la dirección de la cima de la pila en la memoria.</p>
+                    <p class="preInfo">$HI, $LO:</p>
+                    <p class="contenidoLista">Registros utilizados para almacenar los resultados de operaciones de multiplicación y división.</p>
+                    <p class="preInfo">$STATUS:</p>
+                    <p class="contenidoLista">Registro de estado que contiene información sobre el estado del procesador y las banderas de condición.</p>
+                </div>      
+            </div> 
+        </div>
+        <!-- FIN SUBTEMA 2-->
+        <!-- INICIO SUBTEMA 3 -->
+        <div>
+            <div class="tituloTemas wrapper">
+                2.3 El Ciclo de Instrucción
+            </div>
+            <!-- 1 -->
+            <div>
+                <p class="estiloSubtemas">Ciclo de Fetch-Decode-Execute</p>
+                <p class="ingles">Es una secuencia de pasos que se repiten para ejecutar instrucciones en un procesador.</p>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Fetch (Obtención):</p>
+                        <p class="contenidoLista">En esta etapa, el procesador busca la siguiente instrucción en la memoria principal. Utiliza el contador de programa (Program Counter - PC) para obtener la dirección de memoria de la siguiente instrucción. La instrucción se carga en el registro de instrucción (Instruction Register - IR).</p>
+                        <p class="tituloLista">Decode (Decodificación):</p>
+                        <p class="contenidoLista">En esta etapa, el procesador interpreta la instrucción obtenida en la etapa de Fetch. Analiza el código de operación y los operandos de la instrucción para determinar qué operación debe realizar y qué datos debe utilizar. Esta etapa también puede incluir la decodificación de los modos de direccionamiento utilizados por la instrucción.</p>
+                    </div>
+                    <div>
+                        <p class="tituloLista">Execute (Ejecución):</p>
+                        <p class="contenidoLista">En esta etapa, el procesador ejecuta la instrucción utilizando los operandos obtenidos en la etapa de decodificación. Realiza la operación especificada por la instrucción, como una operación aritmética, una operación lógica o una transferencia de datos entre registros o memoria. Esta etapa puede implicar el acceso a la memoria principal si la instrucción requiere leer o escribir datos en la memoria.</p>
+                        <div class="imagen" style="background-color: #EFEFEF;"><img src = "https://www.computerhope.com/jargon/m/machine-cycle.png"></div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- fin 1-->
+            <!-- 2 -->
+            <div>
+                <p class="estiloSubtemas">Segmentación de Instrucciones</p>
+                <p class="ingles">La segmentación de instrucciones es una técnica utilizada en el diseño de procesadores para mejorar la eficiencia y el rendimiento de la ejecución de instrucciones. Consiste en dividir el proceso de ejecución de instrucciones en etapas más pequeñas y ejecutarlas de manera simultánea y superpuesta.</p>
+                <div><p class="qEs" style="padding: 20px;">El proceso de segmentación se basa en el principio de que diferentes partes de una instrucción pueden ejecutarse en paralelo, lo que permite aumentar la velocidad de ejecución global del programa. A continuación se describen las etapas típicas de la segmentación de instrucciones:</p></div>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Fetch (Obtención):</p>
+                        <p class="contenidoLista">En esta etapa, se obtiene la instrucción siguiente de la memoria y se carga en un registro de instrucción.</p>
+                        <p class="tituloLista">Decode (Decodificación):</p>
+                        <p class="contenidoLista">En esta etapa, se interpreta la instrucción y se determinan los operandos y la operación a realizar.</p>
+                        <p class="tituloLista">Execute (Ejecución):</p>
+                        <p class="contenidoLista">En esta etapa, se lleva a cabo la operación especificada por la instrucción. Puede implicar operaciones aritméticas, lógicas o de transferencia de datos.</p>
+                    </div>
+                    <div>
+                        <p class="tituloLista">Memory Access (Acceso a Memoria):</p>
+                        <p class="contenidoLista">Si la instrucción requiere acceder a la memoria principal, se realiza en esta etapa. Puede implicar la lectura o escritura de datos en la memoria.</p>
+                        <p class="tituloLista">Write Back (Escritura):</p>
+                        <p class="contenidoLista">En esta etapa, se escriben los resultados de la operación en los registros correspondientes.</p>
+                    
+                    </div>
+                </div>
+            </div>
+           <!-- fin 2 -->
+           <!-- 3 -->
+           <div>
+                <div class="estiloSubtemas"> <p class="estiloSubtemas"> Conjunto de Instrucciones Características y Funciones</p></div>
+                <div style = "padding: 40px;">
+                    <p class="qEs">El conjunto de instrucciones de un procesador se refiere al conjunto de operaciones que el procesador puede ejecutar. Cada arquitectura de procesador tiene su propio conjunto de instrucciones específicas, y estas instrucciones definen las operaciones que el procesador puede realizar y cómo se llevan a cabo. A continuación se describen algunas características y funciones comunes que se encuentran en los conjuntos de instrucciones:</p>
+                </div>
+                <div class="arquitecturas">
+                    <div class="columnas">
+                        <div>
+                            <p class="tituloLista">Operaciones aritméticas:</p>
+                            <p class="contenidoLista">Las instrucciones aritméticas permiten realizar operaciones matemáticas básicas como suma, resta, multiplicación y división. Estas instrucciones pueden operar en registros o en memoria.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Operaciones lógicas:</p>
+                            <p class="contenidoLista">Las instrucciones lógicas realizan operaciones booleanas como AND, OR, XOR y NOT. Estas instrucciones se utilizan para manipular y comparar bits en registros o memoria.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Transferencia de datos:</p>
+                            <p class="contenidoLista">Las instrucciones de transferencia de datos permiten mover datos entre registros, memoria y dispositivos de E/S. Estas instrucciones son fundamentales para el intercambio de datos entre diferentes componentes del sistema.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Manipulación de cadenas de caracteres:</p>
+                            <p class="contenidoLista">Algunas arquitecturas de procesadores incluyen instrucciones específicas para manipular cadenas de caracteres, como copiar, concatenar o comparar cadenas.</p>
+                        </div>
+                    </div>
+                    <div class="columnas">
+                        <div>
+                            <p class="tituloLista">Control de flujo:</p>
+                            <p class="contenidoLista">Las instrucciones de control de flujo permiten modificar el flujo de ejecución del programa. Esto incluye instrucciones de salto condicional e incondicional, instrucciones de llamada y retorno de subrutinas, e instrucciones de interrupción para manejar eventos externos.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Operaciones de punto flotante:</p>
+                            <p class="contenidoLista">Los procesadores que admiten cálculos de punto flotante incluyen instrucciones especializadas para realizar operaciones aritméticas y lógicas en números de punto flotante.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Acceso a la memoria:</p>
+                            <p class="contenidoLista">Las instrucciones de acceso a la memoria permiten leer y escribir datos en la memoria principal. Esto incluye instrucciones de carga (load) y almacenamiento (store) que transfieren datos entre registros y memoria.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Modos de direccionamiento:</p>
+                            <p class="contenidoLista">Las arquitecturas de procesadores también pueden incluir diferentes modos de direccionamiento que especifican cómo se accede a los operandos de una instrucción. Esto puede incluir direccionamiento inmediato, directo, indirecto, indexado, entre otros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style = "padding: 50px;">
+                    <p class="qEs">El conjunto de instrucciones de un procesador determina las operaciones que un programador puede utilizar para escribir programas y define las capacidades y limitaciones del procesador. Un conjunto de instrucciones bien diseñado y eficiente puede facilitar el desarrollo de software y permitir una ejecución rápida y eficiente de los programas.</p>
+                </div>
+           </div>
+           <!-- fin 3-->
+           <!-- 4 -->
+           <div>
+                <div class="estiloSubtemas">
+                    <p class="estiloSubtemas">Modos de direccionamiento</p>
+                    <p class="ingles">Los modos de direccionamiento se refieren a las diferentes formas en las que se especifican las direcciones de memoria o los operandos en las instrucciones de un procesador. Cada arquitectura de procesador puede tener sus propios modos de direccionamiento.</p>
+                </div>
+                <div class="arquitecturas">
+                    <div class="columnas">
+                        <div>
+                            <p class="tituloLista">Direccionamiento inmediato:</p>
+                            <p class="contenidoLista">El valor del operando se especifica directamente en la instrucción. Por ejemplo, la instrucción "ADD R1, #5" suma el valor inmediato 5 al registro R1.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Direccionamiento directo:</p>
+                            <p class="contenidoLista">La dirección del operando se especifica directamente en la instrucción. Por ejemplo, la instrucción "LOAD R1, [1000]" carga el valor de la dirección de memoria 1000 en el registro R1.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Direccionamiento indirecto:</p>
+                            <p class="contenidoLista">La instrucción contiene la dirección de memoria que contiene la dirección del operando. Por ejemplo, la instrucción "LOAD R1, [R2]" carga el valor de la dirección almacenada en el registro R2 en el registro R1.</p>
+                        </div>
+                    </div>
+                    <div class="columnas">
+                        <div>
+                            <p class="tituloLista">Direccionamiento indexado:</p>
+                            <p class="contenidoLista">La dirección del operando se calcula sumando un valor de desplazamiento a un registro base. Por ejemplo, la instrucción "LOAD R1, [R2 + 4]" carga el valor de la dirección obtenida al sumar 4 al contenido del registro R2 en el registro R1.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Direccionamiento relativo:</p>
+                            <p class="contenidoLista">La dirección del operando se calcula sumando un valor de desplazamiento a la dirección de la siguiente instrucción. Este modo es común en las instrucciones de salto condicional. Por ejemplo, la instrucción "JUMP IF EQUAL [PC + 8]" salta a una dirección específica si la condición de igualdad se cumple, sumando 8 a la dirección de la siguiente instrucción.</p>
+                        </div>
+                        
+                        <div>
+                            <p class="tituloLista">Direccionamiento basado en pila:</p>
+                            <p class="contenidoLista">Los operandos se toman de la cima de la pila. Este modo es utilizado comúnmente en operaciones de pila como PUSH y POP.</p>
+                        </div>
+                    </div>
+                </div>
+           </div> <!-- fin 4-->
+        </div>
+        <!-- FIN SUBTEMA 4-->
+
+        <!-- fin -->
+        <div>
+            <div class="tituloTemas wrapper">
+                2.4 Casos de estudio de CPU reales
+            </div>
+            <div class="arquitecturas">
+                <div class="columnas">
+                    <div>
+                        <p class="tituloLista">Intel Core i7:</p>
+                        <p class="contenidoLista">La línea de procesadores Intel Core i7 ha sido ampliamente adoptada en computadoras de escritorio y estaciones de trabajo de alto rendimiento. Estos procesadores están diseñados para ofrecer un rendimiento excepcional en aplicaciones que requieren potencia de procesamiento intensiva, como edición de video, diseño gráfico y juegos.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">AMD Ryzen:</p>
+                        <p class="contenidoLista">Los procesadores AMD Ryzen han ganado popularidad por su rendimiento y relación calidad-precio. Estos procesadores utilizan la arquitectura Zen de AMD y ofrecen un alto número de núcleos y subprocesos, lo que los hace ideales para tareas multitarea y aplicaciones que aprovechan el paralelismo.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">ARM Cortex-A:</p>
+                        <p class="contenidoLista">Los procesadores basados en la arquitectura ARM Cortex-A, como los utilizados en dispositivos móviles y sistemas embebidos, han revolucionado la computación móvil. Estos procesadores se caracterizan por su eficiencia energética y su capacidad para ejecutar aplicaciones complejas con un consumo de energía reducido.</p>
+                    </div>
+                </div>
+                <div class="columnas">
+                    <div>
+                        <p class="tituloLista">IBM POWER:</p>
+                        <p class="contenidoLista">La arquitectura de procesadores IBM POWER es conocida por su capacidad de procesamiento escalable y su uso en servidores de alto rendimiento. Estos procesadores son ampliamente utilizados en entornos empresariales para aplicaciones críticas y cargas de trabajo intensivas.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">NVIDIA GPUs:</p>
+                        <p class="contenidoLista">Aunque técnicamente no son CPU, las unidades de procesamiento gráfico (GPU) de NVIDIA se han convertido en una parte fundamental de muchos sistemas de computación modernos. Estas GPUs son conocidas por su capacidad para realizar cálculos paralelos masivos, lo que las hace ideales para aplicaciones como inteligencia artificial, aprendizaje automático y renderizado de gráficos en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <h3>Arquitectura de Computadoras <br> 17:00 - 18:00</h3>
+                <p>Instituto Tecnológico de Saltillo</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/TecNMcampusSaltillo"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/tecnmitsaltillo/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://saltillo.tecnm.mx/"><i class="fa fa-google"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Ciclo Escolar Enero-Junio 2023. Alumna: <span>Alma Rosaura Mía Morales Ramírez 21051474</span></p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

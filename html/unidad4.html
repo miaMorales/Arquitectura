@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 4</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src = "../js/header.js"></script>
+    <link rel="stylesheet" href="../css/stylesU1.css">
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="contenedorDIV">
+        <header class = "header2">
+            <div class="wrapper">
+                <div class="logo">
+                    Unidad &nbsp; 4
+                </div>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="unidad1.html">Unidad 1</a>
+                    <a href="unidad2.html">Unidad 2</a>
+                    <a href="unidad3.html">Unidad 3</a>
+                    <a href="practicas.html">Prácticas</a>
+                </nav>
+            </div>
+        </header>
+        <!-- SUBTEMA 1 -->
+        <DIV>
+            <!-- 4.1 -->
+            <div class="tituloTemas wrapper">
+                4.1 Apectos Básicos de la Computación Paralela
+                <p class="qEs">
+                    La computación paralela es un enfoque que se utiliza para realizar tareas computacionales utilizando múltiples procesadores o núcleos de procesamiento al mismo tiempo. Este enfoque permite dividir una tarea en partes más pequeñas que pueden ser ejecutadas simultáneamente, lo que conduce a un aumento en el rendimiento y la capacidad de procesamiento.
+                    <br>A continuación, se presentan algunos aspectos básicos de la computación paralela:
+                </p>
+            </div>
+            <div class="imagen" style="background-color: #EFEFEF;"><img src="../media/unidad4/computacionParalela.png" width="700px"></div>
+            <div class="arquitecturas">
+                <div>
+                    <p class="tituloLista">Paralelismo:</p>
+                    <p class="contenidoLista">El paralelismo es la base de la computación paralela. Se refiere a la capacidad de realizar múltiples operaciones o tareas al mismo tiempo. Existen diferentes niveles de paralelismo, como el paralelismo de datos, donde se procesan conjuntos de datos independientes simultáneamente, y el paralelismo de tareas, donde se ejecutan tareas independientes de manera simultánea.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Tareas independientes:</p>
+                    <p class="contenidoLista">En la computación paralela, es importante identificar tareas que pueden ejecutarse de forma independiente. Estas tareas pueden ser divididas y asignadas a diferentes procesadores o núcleos para su ejecución simultánea. La capacidad de identificar y diseñar tareas independientes es crucial para obtener un buen rendimiento en la computación paralela.</p>
+                </div>
+            </div>
+            <div class="arquitecturas">
+                <div>
+                    <p class="tituloLista">Comunicación:</p>
+                    <p class="contenidoLista">En los sistemas de computación paralela, los procesadores o núcleos necesitan comunicarse entre sí para intercambiar datos e información. La comunicación puede ser realizada mediante el uso de memoria compartida, donde los procesadores acceden a una región de memoria común, o mediante el uso de paso de mensajes, donde los procesadores envían y reciben mensajes para intercambiar datos.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Granularidad:</p>
+                    <p class="contenidoLista">La granularidad se refiere al tamaño de las tareas que se ejecutan en paralelo. Puede haber diferentes niveles de granularidad, desde tareas muy pequeñas y granulares hasta tareas más grandes y gruesas. La elección de la granularidad adecuada depende de varios factores, como el equilibrio entre el tiempo de ejecución y la sobrecarga de comunicación.</p>
+                </div>
+            </div>
+            <div class="arquitecturas">
+                <div>
+                    <p class="tituloLista">Arquitecturas paralelas:</p>
+                    <p class="contenidoLista">Existen diferentes tipos de arquitecturas paralelas utilizadas en la computación paralela, como sistemas multiprocesador (MP), sistemas multicomputador (MC) y sistemas de memoria compartida distribuida (DSM). Cada arquitectura tiene sus propias características y enfoques para el paralelismo y la comunicación.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Programación paralela:</p>
+                    <p class="contenidoLista">Para aprovechar al máximo la computación paralela, se requiere programar de manera específica para aprovechar el paralelismo y la comunicación. Hay diferentes modelos de programación paralela, como el modelo de paso de mensajes (por ejemplo, MPI), el modelo de memoria compartida (por ejemplo, OpenMP) y el modelo de programación basado en tareas (por ejemplo, OpenACC). Estos modelos proporcionan abstracciones y herramientas para diseñar y desarrollar aplicaciones paralelas.</p>
+                </div>
+            </div>
+
+        </DIV> <!-- fin subtema 1-->
+        <!-- 4.2 -->
+        <DIV>
+            <div class="tituloTemas wrapper">
+                4.2 Tipos de Computación Paralela
+            </div>
+            <div>
+                <p class="estiloSubtemas">Clasificación</p>
+                <p class="ingles" style="font-size: 20px;">La computación paralela se puede clasificar en diferentes categorías según el tipo de paralelismo que se utiliza. A continuación, se presentan las principales clasificaciones:</p>
+                <div class = "arquitecturas">
+                    <div>
+                        <p class="tituloLista">Paralelismo de datos:</p>
+                        <p class="contenidoLista">En este tipo de computación paralela, se procesan múltiples datos en paralelo. Los datos se dividen en partes más pequeñas y se procesan simultáneamente en diferentes procesadores o núcleos. Cada procesador realiza la misma operación en su conjunto de datos, lo que permite acelerar la ejecución de tareas intensivas en datos. El paralelismo de datos se utiliza comúnmente en aplicaciones como el procesamiento de imágenes, simulaciones numéricas y procesamiento de señales.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Paralelismo de tareas:</p>
+                        <p class="contenidoLista">En este enfoque, se ejecutan múltiples tareas o subprocesos en paralelo. Cada tarea puede ser independiente y se ejecuta en un procesador o núcleo diferente. El paralelismo de tareas es útil cuando hay tareas independientes que pueden ejecutarse simultáneamente, como en aplicaciones de simulación, cómputo científico y procesamiento de datos masivos.</p>
+                    </div>
+                    <div>
+                        <p class="tituloLista">Paralelismo de instrucciones:</p>
+                        <p class="contenidoLista">En este tipo de computación paralela, las instrucciones de un programa se descomponen en múltiples subinstrucciones que se ejecutan en paralelo en diferentes unidades de ejecución. Esto se logra mediante la explotación de la capacidad de procesamiento de unidades de ejecución múltiples, como el uso de conjuntos de instrucciones multimedia (SIMD) o conjuntos de instrucciones vectoriales (VLIW). El paralelismo de instrucciones se utiliza en aplicaciones que requieren un alto rendimiento en cálculos intensivos, como la computación científica y el procesamiento de gráficos.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="estiloSubtemas">Arquitectura de Computadoras Secuenciales:</p>
+                <div style="padding: 80px; text-align: justify;">
+                    <div class="imagen" style="background-color: #EFEFEF;"><img src="../media/unidad4/secuencial.JPG" width="700px"></div>
+                    <p class="qEs" style="text-align: justify;">
+                        La arquitectura de computadoras secuenciales se refiere a los sistemas computacionales que siguen un modelo de ejecución secuencial de instrucciones. En estos sistemas, las instrucciones se ejecutan una tras otra de forma secuencial, lo que implica que solo una instrucción se ejecuta a la vez. La arquitectura secuencial se basa en la premisa de que el resultado de una instrucción depende del resultado de la instrucción anterior.
+                        <br>
+                        En una arquitectura secuencial, un procesador tiene una única unidad de control que se encarga de buscar, decodificar y ejecutar las instrucciones. La unidad de control controla el flujo de instrucciones y los accesos a la memoria y los dispositivos de entrada/salida. Las arquitecturas secuenciales también suelen utilizar una memoria centralizada donde se almacenan las instrucciones y los datos.
+                        <br>
+                        Aunque las arquitecturas secuenciales son ampliamente utilizadas y comprendidas, tienen limitaciones en términos de rendimiento y capacidad de procesamiento. A medida que las aplicaciones y las demandas computacionales se vuelven más complejas, el uso de arquitecturas paralelas se vuelve más relevante para aprovechar al máximo los recursos y acelerar la ejecución de tareas.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p class="estiloSubtemas">Organización de Direcciones de Memoria:</p>
+                <div style="padding: 40px; text-align: justify;">
+                    <p class="qEs" style="text-align: justify; ">
+                        <b>La organización de direcciones de memoria en sistemas paralelos es un aspecto crítico para garantizar un acceso eficiente a los datos y evitar conflictos y cuellos de botella. En los sistemas paralelos, varios procesadores o núcleos pueden acceder a la memoria simultáneamente, lo que requiere un manejo adecuado de la coherencia de la memoria y la sincronización.
+                        <br>
+                        Existen diferentes enfoques para la organización de direcciones de memoria en sistemas paralelos:
+                        </b>
+                    </p>
+                </div>
+                <div class = "arquitecturas">
+                    <div>
+                        <p class="tituloLista">Memoria compartida:</p>
+                        <p class="contenidoLista">En los sistemas con arquitectura de memoria compartida, todos los procesadores acceden a una región de memoria común. Esta memoria compartida puede ser implementada físicamente como un banco de memoria centralizado o distribuida en múltiples módulos de memoria. Los procesadores pueden leer y escribir en esta memoria compartida, lo que requiere la implementación de protocolos de coherencia de memoria para garantizar que los datos sean consistentes.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Memoria distribuida:</p>
+                        <p class="contenidoLista">En los sistemas con arquitectura de memoria distribuida, cada procesador tiene su propia memoria local. Cada procesador solo puede acceder a su propia memoria local y debe utilizar técnicas de comunicación, como el paso de mensajes, para intercambiar datos con otros procesadores. La memoria distribuida puede ofrecer un alto rendimiento en sistemas de gran escala, pero requiere una gestión cuidadosa de la comunicación y la sincronización entre los procesadores.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Jerarquía de memoria:</p>
+                        <p class="contenidoLista">En muchos sistemas paralelos, se utiliza una jerarquía de memoria que combina elementos de memoria compartida y distribuida. Por ejemplo, cada procesador puede tener su propia memoria caché privada y acceder a una memoria compartida más grande. Esta jerarquía de memoria permite reducir el tiempo de acceso a los datos y mejorar el rendimiento global del sistema.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </DIV> <!-- fin 4.2-->
+        <!-- 4.3 -->
+        <DIV>
+            <div class="tituloTemas wrapper">
+                4.3 Sistema de Memoria Compartida
+            </div>
+            <div>
+                <p class="estiloSubtemas">Redes de Interconexión:</p>
+                <div style="padding: 40px; text-align: justify;">
+                    <p class="qEs" style="text-align: justify; ">
+                        <b>En los sistemas de memoria compartida, los procesadores o núcleos comparten un espacio de direcciones de memoria común, lo que permite un acceso directo a los datos compartidos. La comunicación entre los procesadores se realiza a través de una red de interconexión, que es responsable de enrutar los datos y las señales entre los diferentes nodos del sistema. A continuación, se presentan algunos enfoques comunes utilizados en las redes de interconexión de sistemas de memoria compartida: </b>
+                    </p>
+                </div>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Dinámica (indirecta):</p>
+                        <p class="contenidoLista">En las redes de interconexión dinámicas, los nodos están conectados mediante conmutadores, también conocidos como enrutadores. Estos conmutadores son capaces de establecer rutas de comunicación flexibles entre los nodos y se pueden reconfigurar dinámicamente para adaptarse a los requisitos de comunicación. Las redes de interconexión dinámicas ofrecen una mayor flexibilidad y capacidad de expansión, lo que las hace adecuadas para sistemas de memoria compartida de gran escala.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Medio Compartida:</p>
+                        <p class="contenidoLista">En las redes de interconexión de medio compartida, los nodos comparten un medio físico de comunicación, como un bus o un enlace punto a punto. Los nodos pueden acceder al medio compartido para enviar y recibir datos, y se utilizan protocolos de acceso al medio para gestionar el acceso simultáneo y evitar colisiones. Las redes de medio compartida pueden ser simples y económicas de implementar, pero pueden presentar cuellos de botella y limitaciones de escalabilidad en sistemas de gran escala.</p>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Conmutadas:</p>
+                        <p class="contenidoLista">En las redes de interconexión conmutadas, se utilizan conmutadores dedicados para establecer conexiones punto a punto entre los nodos. Cada nodo tiene su propia conexión directa con uno o más conmutadores, lo que permite una comunicación rápida y eficiente. Las redes conmutadas ofrecen un alto rendimiento y capacidad de escalabilidad, ya que permiten un paralelismo completo en las comunicaciones. Sin embargo, su implementación puede ser más compleja y costosa que las redes de medio compartida.</p>
+                    </div>
+                    
+                </div>
+                <div style="padding: 40px; text-align: justify;">
+                    <p class="qEs">
+                        En conclusión, en el subtema 3.3 de ambientes de servicio, se exploran los diferentes entornos en los cuales se pueden utilizar computadoras ensambladas, como negocios, industria, comercio y comercio electrónico. Cada entorno tiene requisitos y consideraciones específicas a tener en cuenta al seleccionar una computadora para ensamblar un equipo. Es importante evaluar las necesidades y los requisitos de cada entorno para garantizar que el equipo cumpla con los objetivos y funcione de manera eficiente en ese entorno particular.
+                    </p>
+                </div>
+            </div>
+        </DIV>
+        <!-- 4.4 -->
+        <DIV>
+            <div class="tituloTemas wrapper">
+                4.4 Sistema de Memoria Distribuida
+                <p class="qEs">En el subtema 4.4, se aborda el sistema de memoria distribuida en el contexto del procesamiento paralelo. A continuación, se explorará el punto clave de este subtema: las redes de interconexión estáticas.</p>
+            </div>
+            <div>
+                <p class="estiloSubtemas">Redes de interconexión estáticas:</p>
+                <div style="padding: 40px; text-align: justify;">
+                    <p class="qEs" style="text-align: justify; ">
+                        En los sistemas de memoria distribuida, las redes de interconexión estáticas juegan un papel fundamental en la comunicación y el intercambio de datos entre los diferentes nodos o procesadores distribuidos en el sistema. Estas redes proporcionan una estructura de conexión fija y predefinida que permite el flujo de información entre los nodos.
+
+                        Las redes de interconexión estáticas se caracterizan por tener una topología preestablecida, es decir, una configuración fija de enlaces y conexiones entre los nodos. Algunas de las topologías comunes utilizadas en los sistemas de memoria distribuida son:
+                    </p>
+                </div>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Topología de árbol:</p>
+                        <p class="contenidoLista">En esta topología, los nodos se organizan en una estructura jerárquica de ramificación, similar a un árbol invertido. Los datos se transmiten de un nodo a otro a través de enlaces unidireccionales.</p>
+                        <div class="imagen" style = "background-color: #EFEFEF;"> <img src="../media/unidad3/arbol.png" width="100px"></div>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Topología de anillo:</p>
+                        <p class="contenidoLista">En esta topología, los nodos se conectan en forma de un anillo cerrado. Cada nodo tiene una conexión directa con sus nodos vecinos más cercanos. Los datos se transmiten de un nodo a otro en un sentido circular.</p>
+                        <div class="imagen" style = "background-color: #EFEFEF;"> <img src="../media/unidad3/anillo.png" width="100px"></div>
+                    </div>
+                </div>
+                <div class="arquitecturas">
+                    <div>
+                        <p class="tituloLista">Topología de malla:</p>
+                        <p class="contenidoLista">En esta topología, cada nodo tiene conexiones directas con varios otros nodos, formando una estructura de malla bidimensional o tridimensional. Los datos pueden ser enviados de un nodo a otro a través de rutas diferentes.</p>
+                        <div class="imagen" style = "background-color: #EFEFEF;"> <img src="../media/unidad3/malla.png" width="100px"></div>
+                    </div>
+                    
+                    <div>
+                        <p class="tituloLista">Topología de hipercubo:</p>
+                        <p class="contenidoLista">En esta topología, los nodos se organizan en una estructura n-dimensional, donde cada nodo está conectado directamente a otros nodos que tienen una diferencia de un bit en su dirección. Esta topología es especialmente útil para sistemas con un gran número de nodos.</p>
+                        <div class="imagen" style = "background-color: #EFEFEF;"> <img src="../media/unidad3/hipercubo.png" width="100px"></div>
+                    </div>
+                </div>
+                <div style="padding: 40px; text-align: justify;">
+                    <p class="qEs" style="text-align: justify; ">
+                        Las redes de interconexión estáticas proporcionan un mecanismo eficiente para el intercambio de datos en sistemas de memoria distribuida. Sin embargo, la elección de la topología adecuada dependerá de factores como el número de nodos, el tipo de aplicaciones que se ejecutarán y los requisitos de comunicación y rendimiento.
+                        <br>
+                        En conclusión, las redes de interconexión estáticas son un componente esencial en los sistemas de memoria distribuida. Estas redes ofrecen una estructura de conexión fija y predefinida que facilita la comunicación entre los nodos o procesadores distribuidos en el sistema. La elección de la topología de red adecuada es crucial para lograr un rendimiento óptimo y una eficiente transferencia de datos en el procesamiento paralelo.    
+                    </p>
+                </div>
+            </div>
+        </DIV>
+        <DIV>
+            <div class="tituloTemas wrapper">
+                4.5 Casos para Estudio
+                <p class="qEs">En el subtema 4.5, se presentan casos para estudio que ilustran la aplicación y los beneficios del procesamiento paralelo en diferentes ámbitos. A continuación, se explorarán algunos casos destacados:</p>
+            </div>
+            <div class="arquitecturas">
+                <div>
+                    <p class="tituloLista">Simulaciones científicas y computación de alto rendimiento:</p>
+                    <p class="contenidoLista">El procesamiento paralelo ha revolucionado el campo de las simulaciones científicas y la computación de alto rendimiento. En áreas como la física, la química, la biología y la meteorología, los científicos utilizan sistemas de procesamiento paralelo para realizar cálculos complejos y simulaciones numéricas. Estas simulaciones requieren una gran capacidad de procesamiento y memoria para resolver problemas complejos y modelar fenómenos en tiempo real.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Inteligencia artificial y aprendizaje profundo:</p>
+                    <p class="contenidoLista">El procesamiento paralelo es esencial en el campo de la inteligencia artificial (IA) y el aprendizaje profundo. Los algoritmos de aprendizaje automático y redes neuronales profundas requieren un procesamiento masivo y paralelo para entrenar modelos complejos y procesar grandes conjuntos de datos. El uso de sistemas de procesamiento paralelo, como GPUs (Unidades de Procesamiento Gráfico) y TPUs (Unidades de Procesamiento Tensorial), ha impulsado avances significativos en el campo de la IA y ha permitido aplicaciones como reconocimiento de voz, visión por computadora y traducción automática.</p>
+                </div>
+            </div>
+            <div class="arquitecturas">
+                <div>
+                    <p class="tituloLista">Análisis de grandes volúmenes de datos (Big Data):</p>
+                    <p class="contenidoLista">El procesamiento paralelo es fundamental en el análisis de grandes volúmenes de datos, conocido como Big Data. El procesamiento y el procesamiento en paralelo permiten realizar operaciones simultáneas en múltiples conjuntos de datos, acelerando significativamente el tiempo de procesamiento. Esto es especialmente importante en aplicaciones como la minería de datos, el análisis de datos masivos y la generación de informes en tiempo real.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Renderizado y animación 3D:</p>
+                    <p class="contenidoLista">En la industria del entretenimiento, el procesamiento paralelo se utiliza en el renderizado y la animación 3D. Las películas, los videojuegos y las producciones de animación requieren un poder de procesamiento masivo para generar gráficos de alta calidad en tiempo real. El uso de técnicas de procesamiento paralelo, como el trazado de rayos y el renderizado distribuido, permite crear imágenes y animaciones fotorrealistas con tiempos de renderizado reducidos.</p>
+                </div>
+                
+                <div>
+                    <p class="tituloLista">Criptografía y seguridad:</p>
+                    <p class="contenidoLista">En el ámbito de la criptografía y la seguridad de la información, el procesamiento paralelo es utilizado para realizar cálculos intensivos y complejos en algoritmos de cifrado y descifrado. Los sistemas de procesamiento paralelo pueden acelerar los tiempos de procesamiento y romper cifrados más rápidamente, lo que impulsa la necesidad de desarrollar algoritmos más seguros y robustos.</p>
+                </div>
+            </div>
+            <div style="padding: 50px; text-align: justify;">
+                <p class="qEs" style="text-align: justify; ">
+                    La elección de la red de interconexión depende de varios factores, como el tamaño del sistema, los requisitos de rendimiento, el costo y la escalabilidad. Cada enfoque tiene sus propias ventajas y desafíos, y es importante seleccionar la red de interconexión adecuada para maximizar el rendimiento y la eficiencia en los sistemas de memoria compartida.
+                    En resumen, los sistemas de memoria compartida utilizan una red de interconexión para facilitar la comunicación entre los nodos y permitir el acceso a una memoria compartida. Las redes de interconexión pueden ser dinámicas o estáticas, basadas en medios compartidos o conmutadas, y la elección de la red adecuada depende de las características y requisitos específicos del sistema.
+                </p>
+            </div>
+        </DIV>
+        <footer>
+            <div class="footer-content">
+                <h3>Arquitectura de Computadoras <br> 17:00 - 18:00</h3>
+                <p>Instituto Tecnológico de Saltillo</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/TecNMcampusSaltillo"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/tecnmitsaltillo/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://saltillo.tecnm.mx/"><i class="fa fa-google"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Ciclo Escolar Enero-Junio 2023. Alumna: <span>Alma Rosaura Mía Morales Ramírez 21051474</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
